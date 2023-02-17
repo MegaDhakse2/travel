@@ -1,6 +1,7 @@
 class TravelController < ApplicationController
   def index
   @us = 2
+  @u = "this is newbranch2 as a branch from newbranch"
   end
   def search
   countries = find_country(params[:country])
