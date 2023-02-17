@@ -1,5 +1,6 @@
 class TravelController < ApplicationController
   def index
+    @dd = "this is third newbranch"
   end
   def search
   countries = find_country(params[:country])
