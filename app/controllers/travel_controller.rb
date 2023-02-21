@@ -1,10 +1,14 @@
 class TravelController < ApplicationController
   def index
+  @us = 2
   end
   def search
   countries = find_country(params[:country])
 
   unless countries
+
+
+
     flash[:alert] = "Country not found"
     render action: :index
   end
